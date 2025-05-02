@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Krishi Mitra: AI-powered agriculture support for weather forecasts and loan estimations tailored for Indian farmers.">
     <title>Krishi Mitra - Your Farming Companion</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap');
-
         body {
             text-align: center;
             font-family: 'Raleway', sans-serif;
@@ -17,7 +18,7 @@
         }
 
         header {
-            background-color: #6b8e23; /* Olive green */
+            background-color: #6b8e23;
             color: white;
             padding: 40px 0;
             font-size: 36px;
@@ -25,28 +26,6 @@
             font-weight: 700;
             letter-spacing: 1px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        nav {
-            margin-top: 20px;
-        }
-
-        .nav-button {
-            background-color: #ffb347;
-            color: white;
-            padding: 15px 30px;
-            margin: 10px;
-            border: none;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-button:hover {
-            background-color: #ffa000;
         }
 
         #main-content {
@@ -57,13 +36,21 @@
             width: 80%;
             border-radius: 12px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            max-width: 800px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
         }
 
         #features {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 50px;
-            padding: 50px;
+            gap: 30px;
+            padding: 40px 20px;
         }
 
         .feature-box {
@@ -72,7 +59,7 @@
             border-radius: 12px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
             text-align: center;
-            width: 350px;
+            width: 320px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -94,10 +81,10 @@
         }
 
         .feature-button {
-            background-color: #5bc0de; /* Light blue */
+            background-color: #5bc0de;
             color: white;
-            padding: 15px 25px;
-            font-size: 18px;
+            padding: 12px 25px;
+            font-size: 16px;
             font-weight: 600;
             border: none;
             cursor: pointer;
@@ -107,17 +94,24 @@
         }
 
         .feature-button:hover {
-            background-color: #31b0d5; /* Darker blue on hover */
+            background-color: #31b0d5;
         }
 
         footer {
             background-color: #333;
             color: white;
             padding: 20px;
-            margin-top: 30px;
             font-size: 16px;
-            font-weight: 400;
-            font-family: 'Raleway', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .banner-image {
+                width: 95%;
+            }
+
+            .feature-box {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -128,7 +122,7 @@
 
     <section id="main-content">
         <img src="https://t4.ftcdn.net/jpg/02/43/52/57/360_F_243525780_r8sdu06FUxVmqvf3YUthU5s9nE0z0lhh.jpg" alt="Beautiful Farm Landscape" class="banner-image">
-        <p style="font-size: 18px;"><strong>Cultivate Success with AI-Powered Insights</strong></p>
+        <div class="tagline">Cultivate Success with AI-Powered Insights</div>
     </section>
 
     <section id="features">
@@ -151,7 +145,7 @@
     </footer>
 
     <script>
-        //JavaScript can be added here
+        // JavaScript enhancements can go here
     </script>
 </body>
 </html>
